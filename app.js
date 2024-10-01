@@ -6,7 +6,9 @@ let date = document.querySelector("#date");
 btn.addEventListener("click", function(){
     let item = document.createElement("li");
     let hr = document.createElement("hr");
-    item.innerText = `${input.value} - ${date.value}`
+    let span = document.createElement("span");
+    item.innerText =input.value;
+    span.innerText = date.value;
     if(input.value.trim()==="")return;
 
     let delBtn = document.createElement("button");
@@ -17,6 +19,7 @@ btn.addEventListener("click", function(){
     editBtn.classList.add("edit");
     editBtn.innerText = "edit";
 
+    item.appendChild(span);
     item.appendChild(delBtn);
     item.appendChild(editBtn);
     ul.appendChild(item);
@@ -48,6 +51,7 @@ ul.addEventListener("click",function(event){
         const task = taskDetails[0].trim()
         //console.log(task)
         input.value = taskDetails;
+        date.value =parent.childNodes[1].innerText;
         parent.remove();
         
 
