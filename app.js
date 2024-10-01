@@ -21,6 +21,7 @@ btn.addEventListener("click", function(){
     item.appendChild(editBtn);
     ul.appendChild(item);
     ul.appendChild(hr);
+    alert("Task added successfully")
     input.value="";
     date.value="";
 })
