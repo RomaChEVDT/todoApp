@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(217, 233, 233);
+}
+.container{
+    width: 40%;
+    /* border: 1px solid black; */
+    border: 1px solid rgb(184, 178, 178);
+    border-radius: 0.2rem;
+    margin: 5rem auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 1rem auto;
+    border: 1px solid rgb(184, 178, 178);
+    padding-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.head h2{
+    text-align: center;
+    text-decoration: underline;
+    color: #215e97;
+}
+.content{
+    margin: 1rem auto;
+
+}
+.delete{
+    background-color: #f37171;
+    border: 1px solid #9c3131;
+    font-weight: 500;
+    font-size: 0.85rem;
+    border-radius:1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.edit{
+    background-color: #56ec50;
+    border: 1px solid #219727;
+    font-weight: 500;
+    font-size: 0.85rem;
+    border-radius:1rem;
+}
+
+li{
+    font-size: 1rem;
+    font-weight: 600;
+}
+input{
+    width: 90%;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    border: 1px solid #a6a6a6;
+    outline: none;
+    margin-bottom:0.5rem ;
+    margin-top: 0.1rem;
+}
+.Submit{
+    width: 91%;
+    height: 1.5rem;
+    background-color: #f1e1b8;
+    border: 1px solid #8a8069;
+    font-weight: 500;
+    font-size: 0.85rem;
+     
+}
+@media(max-width:500px){
+    .container{
+        width: 100%;
+    }
+}
+@media(max-width:1025px){
+    .container{
+        width: 80%;
+    }
+}
+ 
